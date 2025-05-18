@@ -1,0 +1,58 @@
+/* Blog post styles */
+html, body {
+  height: 100%;
+  background: #f9f9f9;
+  color: #232323;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(35,35,35,0.05);
+}
+
+.article-body img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.language-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.language-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #b71c1c;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.language-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #ffd600;
+}
+
+.language-link:hover {
+  color: #ffd600;
+}
